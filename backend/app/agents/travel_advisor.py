@@ -1,5 +1,5 @@
 from crewai import Agent
-from langchain_openai import ChatOpenAI
+from app.llms import create_llm
 
 
 def create_travel_advisor():
@@ -12,5 +12,5 @@ def create_travel_advisor():
         """,
         verbose=True,
         allow_delegation=False,
-        llm=ChatOpenAI(model="gpt-4"),
+        llm=create_llm(),
     )

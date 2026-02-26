@@ -1,5 +1,5 @@
 from crewai import Agent
-from langchain_openai import ChatOpenAI
+from app.llms import create_llm
 from app.tools.tavily_search import TavilySearchTool
 
 
@@ -13,6 +13,6 @@ def create_weather_agent():
         """,
         verbose=True,
         allow_delegation=False,
-        llm=ChatOpenAI(model="gpt-4"),
+        llm=create_llm(),
         tools=[TavilySearchTool()],
     )
