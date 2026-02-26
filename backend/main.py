@@ -14,6 +14,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from app.api.trips import router as trips_router
+app.include_router(trips_router, prefix="/api")
+
 
 @app.get("/")
 async def root():
