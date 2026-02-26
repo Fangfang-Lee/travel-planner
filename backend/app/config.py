@@ -10,7 +10,7 @@ class Settings:
 
     # MiniMax API
     MINIMAX_API_KEY: str = os.getenv("MINIMAX_API_KEY", "")
-    MINIMAX_MODEL: str = os.getenv("MINIMAX_MODEL", "abab6.5s-chat")
+    MINIMAX_MODEL: str = os.getenv("MINIMAX_MODEL", "MiniMax-M2.5")
 
     # Tavily Search
     TAVILY_API_KEY: str = os.getenv("TAVILY_API_KEY", "")
