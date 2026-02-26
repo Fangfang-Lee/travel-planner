@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: travel-planner-backend
+Version: 0.1.0
+Summary: 智能旅行规划助手后端服务
+Requires-Python: >=3.11
+Provides-Extra: dev
